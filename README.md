@@ -3,6 +3,17 @@
 
 > Open this page at [https://sellorm.github.io/flynns_xmas/](https://sellorm.github.io/flynns_xmas/)
 
+## Objective
+
+Survive the oncoming asteroids for as long as you can!
+
+Surviving for 1 second, gets you ten points. Destroying an asteroid gets you 100 points.
+
+## Controls
+
+Gamepad: D-pad for left and right, A button to fire.
+Keyboard: cursor keys for left and right, Z or Space to fire.
+
 ## Use as Extension
 
 This repository can be added as an **extension** in MakeCode.
