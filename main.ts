@@ -38,6 +38,7 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
         . . . . . . . 5 5 . . . . . . . 
         . . . . . . . . . . . . . . . . 
         `, mySprite, 0, -50)
+    projectile.lifespan = 4000
     music.pewPew.play()
     pause(1000)
 })
@@ -323,6 +324,7 @@ game.onUpdateInterval(2000, function () {
         rock = sprites.create(sprites.space.spaceSmallAsteroid0, SpriteKind.Enemy)
     }
     rock.setPosition(randint(0, 160), 0)
+    rock.lifespan = 4000
     if (info.score() > 2000) {
         rock.setVelocity(0, randint(50, 100))
     } else {
@@ -333,6 +335,7 @@ game.onUpdateInterval(1000, function () {
     info.changeScoreBy(10)
     if (info.score() > 3000) {
         rock = sprites.create(sprites.space.spaceSmallAsteroid0, SpriteKind.Enemy)
+        rock.lifespan = 4000
         rock.setPosition(randint(0, 160), 0)
         rock.setVelocity(0, randint(50, 150))
     }
